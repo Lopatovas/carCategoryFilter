@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Car Filter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+  	<p>Car Type</p>
+  	<div id="btnContainer">
+  		<button class ="btnActive" id="all" onclick="makeActive('all')"><span class="bold">All</span></button> 
+  		<button class="btn" id="small" onclick="makeActive('small')"> <span class="bold">Small</span> $422+</button> 
+  		<button class="btn" id="medium" onclick="makeActive('medium')"> <span class="bold">Medium</span> $433+</button> 
+  		<button class="btn" id="large" onclick="makeActive('large')"> <span class="bold">Large</span> $456+</button> 
+  		<button class="btn" id="suv" onclick="makeActive('suv')"> <span class="bold">SUV</span> $525+</button> 
+  		<button class="btn" id="van" onclick="makeActive('van')"> <span class="bold">Van</span> $649+</button>
+  		<div class="dropdown">
+  			<div class="moreBtn" id="more" onclick="moreOnClick('more')">
+  			 	<span class="bold">More</span> 
+  			 	<span id="arrow" class="arrow arrowBottom"></span>
+  			 	<button id="buttonX" class="moreButtonX" onclick="buttonXClick(event)">X</button>
+  			</div>
+  			<div id="dropdown" class="dropdown-content" >
+  				<label class="container">Pickup Truck <span class="price">$594</span>
+ 					<input type="checkbox" id ="truckCheckbox">
+  					<span class="checkmark"></span>
+  					<button class="onlyButton" id="onlyTruck" onclick="onlyClick('truckCheckbox')">Only</button>
+				</label>
+				<label class="container">Luxury <span class="price">$626</span>
+ 					<input type="checkbox" id="luxuryCheckbox">
+  					<span class="checkmark"></span>
+  					<button class="onlyButton" id="onlyLux" onclick="onlyClick('luxuryCheckbox')">Only</button>
+				</label>
+				<label class="container">Convertible <span class="price">$1248</span>
+ 					<input type="checkbox" id="convertibleCheckbox">
+  					<span class="checkmark"></span>
+  					<button class="onlyButton" id="onlyConvertible" onclick="onlyClick('convertibleCheckbox')">Only</button>
+				</label>
+				<label class="container">Commercial <span class="price">$1607</span>
+ 					<input type="checkbox" id="commercialCheckbox">
+  					<span class="checkmark"></span>
+  					<button class="onlyButton" id="onlyCommerc" onclick="onlyClick('commercialCheckbox')">Only</button>
+				</label>
+  			</div>
+  		</div>
+  	</div>
+  </body>
+</html>
